@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 	 
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<link rel="stylesheet" href="assets/css/reset.css">
+
+
+</head>
+<body>
+	<div class="jumbotron" id="gameTitle">
+  <h1 class="display-3">Crystal Collector</h1>
+  <p class="lead">A simple game about crystals.</p>
+
+</div>
+ 
+    <div>
+      <div>
+      <h2>Rules</h2>
+      <p>You will be given a random number at the start of the game.</p>
+      <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p> 
+      <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number</p>
+      <p>The value of each crystal is hidden from you until you click on it.</p>
+      <p>Each time when the game starts, the game will change the values of each crystal</p>
+    </div>
+  </div>
+  <div>
+  <div>
+    <span id="randNum"></span>
+    </div>
+  </div>
+    <div>
+      <div>
+        <p>Wins: <span id="winNum"></span></p>  
+        <p>Losses: <span id="lossNum"></span></p>  
+    </div>
+  </div>
+
+
+	<div id="crystal-buttons">
+    <button class= "rocks" id="crystalOne"><img style="height: 200px; width: 220px" src="assets/images/green.png"></button>
+    <button class= "rocks" id="crystalTwo"><img style="height: 200px; width: 220px" src="assets/images/purple.png"></button>
+    <button class= "rocks" id="crystalThree"><img style="height: 200px; width: 220px" src="assets/images/red.png"></button>
+    <button class= "rocks" id="crystalFour"><img style="height: 200px; width: 220px" src="assets/images/yellow.png"></button>
+    </div>
+	
+    <div>
+    <h2>Your total score is:</h2>
+    <span id="score"></span>
+    </div>
+
+  
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
